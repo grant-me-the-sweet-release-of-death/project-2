@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Windows 8.0 Меню</title>
+    <style>
+        .scroll {
+          height: 200px;
+          overflow-x: scroll;
+        }
+        .menu-panel {
+            display: flex;
+            align-items: center;
+            overflow-x: auto;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .menu-item:last-child {
+            margin-right: 0;
+        }
+
+        .menu-item.active {
+            background-color: #0078d7;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .menu-label {
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-panel">
+        <div class="menu-item active">
+            <span class="menu-icon">🏠</span>
+            <span class="menu-label">Домой</span>
+        </div>
+        <div class="menu-item">
+            <span class="menu-icon">💼</span>
+            <span class="menu-label">Рабочий стол</span>
+        </div>
+        <div class="menu-item">
+            <span class="menu-icon">📁</span>
+            <span class="menu-label">Файлы</span>
+        </div>
+        <div class="menu-item">
+            <span class="menu-icon">✉️</span>
+            <span class="menu-label">Почта</span>
+        </div>
+        <div class="menu-item">
+            <span class="menu-icon">⚙️</span>
+            <span class="menu-label">Настройки</span>
+        </div>
+        <div class="menu-item">
+            <span class="menu-icon">⏻️</span>
+            <span class="menu-label">Выключить</span>
+        </div>
+    </div>
+</body>
+
+</html>
